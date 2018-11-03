@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xiaoshuowang</title>
+</head>
+<body>
+<h1></h1>
+{% for title in titles %}
+    <a href="/caption/{{ title }}">{{ title }}</a>
+    <br/>
+{% endfor %}
+{% if captions %}
+    {% for caption in captions %}
+        <a href="/articles/{{ caption.title }}/{{ caption.caption }}">{{ caption.caption }}</a>
+        <br/>
+    {% endfor %}
+{% endif %}
+
+{% if article %}
+    <p>{{ article.detail }}</p>
+{% endif %}
+
+
+</body>
+</html>
