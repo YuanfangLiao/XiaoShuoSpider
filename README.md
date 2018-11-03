@@ -1,2 +1,4 @@
 # XiaoShuoSpider
 Scrapy小项目，爬取小说网站所有章节存入mysql，并用django展示出来
+ThinkPad目录是爬虫项目目录
+JinYongXiaoShuo是Django项目目录
